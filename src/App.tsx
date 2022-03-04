@@ -1,4 +1,8 @@
+import useApi from "./hooks/useApi.js";
+
 function App() {
+  const { getNumberOfSpaceships } = useApi();
+  getNumberOfSpaceships();
   return (
     <div id="background-container">
       <header id="header-title">Star Wars Test</header>
